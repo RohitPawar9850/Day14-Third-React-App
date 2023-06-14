@@ -4,36 +4,23 @@ import './App.css';
 function App() {
   return (
     <>
-    <Header></Header>
-    <Body></Body>
-    <Footer></Footer>
-    </>
-  );
-}
-function Header()
-{
-  return (
-    <>
-    <h1 className='bg-primary'>Header</h1>
-    <h2 className='bg-info'>Header</h2>
+      <h1>Counter App</h1>
+      <CounterApp />
     </>
   );
 }
 
-function Body()
-{
-  return (
-    <>
-    <h1 className='bg-dark text-light'>body</h1>
-    </>
-  );
-}
+// UserDefineTag
+function CounterApp() {
+  // Member Function
+  let likeMeAction = () => {
+    // alert();
+    console.log("I m button click");
+  };
 
-function Footer()
-{
   return (
     <>
-    <h1 className='bg-primary text-light'>Footer</h1>
+      <input type="button" value="Like Me" onClick={likeMeAction} />
     </>
   );
 }
