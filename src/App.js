@@ -1,34 +1,68 @@
-import { useState } from "react";
-
+// User Defined Tag: <App />
 function App() {
   return (
     <>
-      <h1>Counter App</h1>
-      <CounterApp />
+      <AppHeader />
+      <AppBody />
+      <AppFooter />
     </>
   );
 }
 
-// UserDefineTag
-function CounterApp() {
-  // Data Member :: stateless/ stateful
-  // let counter = 1; // stateless
-  let [counter, setCounter] = useState(1); // to create stateful variable + this will help to perform dom operation.
+// User Defined Tag: <AppHeader />
+function AppHeader() {
+  return (
+    <div className="row bg-success text-light p-3 fs-1">
+      <div className="col">Home</div>
+      <div className="col">Project</div>
+      <div className="col">AboutUs</div>
+    </div>
+  );
+}
 
-  // Member Function
-  let likeMeAction = () => {
-    counter = counter + 1;
-    console.log("I m button click", counter);
-
-    // Asking REACT TO PERFOMR DOM OEPRATION
-    // Calling setCounter => DOM Operation
-    setCounter(counter);
-  };
-
+// User Defined Tag: <AppBody />
+function AppBody() {
   return (
     <>
-      <h1>{counter}</h1>
-      <input type="button" value="Like Me" onClick={likeMeAction} />
+      <div className="alert alert-success fs-3">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
+        rem corrupti ipsam, necessitatibus, ut tempore nisi aspernatur cumque
+        blanditiis quae quia. Corrupti, in ducimus. Ullam suscipit inventore
+        quam ex non. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Voluptatibus tempora eum cupiditate. Nobis id, facere iure debitis eum a
+        at, nulla placeat, tenetur tempore ratione adipisci deleniti alias
+        aspernatur voluptatem! Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Perspiciatis rem corrupti ipsam, necessitatibus, ut
+        tempore nisi aspernatur cumque blanditiis quae quia. Corrupti, in
+        ducimus. Ullam suscipit inventore quam ex non. Lorem ipsum dolor sit
+        amet consectetur adipisicing elit. Voluptatibus tempora eum cupiditate.
+        Nobis id, facere iure debitis eum a at, nulla placeat, tenetur tempore
+        ratione adipisci deleniti alias aspernatur voluptatem!
+      </div>
+      <div className="alert alert-success fs-3">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
+        rem corrupti ipsam, necessitatibus, ut tempore nisi aspernatur cumque
+        blanditiis quae quia. Corrupti, in ducimus. Ullam suscipit inventore
+        quam ex non. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Voluptatibus tempora eum cupiditate. Nobis id, facere iure debitis eum a
+        at, nulla placeat, tenetur tempore ratione adipisci deleniti alias
+        aspernatur voluptatem! Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Perspiciatis rem corrupti ipsam, necessitatibus, ut
+        tempore nisi aspernatur cumque blanditiis quae quia. Corrupti, in
+        ducimus. Ullam suscipit inventore quam ex non. Lorem ipsum dolor sit
+        amet consectetur adipisicing elit. Voluptatibus tempora eum cupiditate.
+        Nobis id, facere iure debitis eum a at, nulla placeat, tenetur tempore
+        ratione adipisci deleniti alias aspernatur voluptatem!
+      </div>
+    </>
+  );
+}
+
+// User Defined Tag: <AppFooter />
+function AppFooter() {
+  return (
+    <>
+      <h1>App Footer</h1>
     </>
   );
 }
