@@ -24,6 +24,9 @@ function CounterApp()
   return (
     <>
     <h1>{counter}</h1>
+    <h1>{counter}</h1>
+    <div>{counter}</div>
+    <br />
     <input type="button" value="like me" onClick={LikeMeAction} />
     </>
   );
