@@ -4,8 +4,15 @@ function App()
 {
   return (
     <>
-    <h1>Counter App</h1>
+    <div className="bg-dark text-primary p-3">
+    <h1 className="bg-info text-primary p-3">Counter App1</h1>
+    <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque expedita dolor tempore consequatur magni fugit necessitatibus architecto, recusandae aliquid, iure eum molestiae repellendus placeat maxime! Similique alias architecto voluptates explicabo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias vero modi explicabo facere! Error, dolor quo ipsam expedita harum fuga consectetur necessitatibus voluptas illum excepturi, repellat consequatur asperiores aut deserunt. </div>
     <CounterApp> </CounterApp>
+    <hr />
+    <h1 className="bg-info text-primary p-3">Counter App2</h1>
+    <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque expedita dolor tempore consequatur magni fugit necessitatibus architecto, recusandae aliquid, iure eum molestiae repellendus placeat maxime! Similique alias architecto voluptates explicabo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias vero modi explicabo facere! Error, dolor quo ipsam expedita harum fuga consectetur necessitatibus voluptas illum excepturi, repellat consequatur asperiores aut deserunt. </div>
+    <CounterApp> </CounterApp>
+    </div>
     </>
   );
 }
@@ -24,8 +31,6 @@ function CounterApp()
   return (
     <>
     <h1>{counter}</h1>
-    <h1>{counter}</h1>
-    <div>{counter}</div>
     <br />
     <input type="button" value="like me" onClick={LikeMeAction} />
     </>
