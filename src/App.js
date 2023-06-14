@@ -30,9 +30,9 @@ function CounterApp()
   };
   return (
     <>
-    <h1>{counter}</h1>
+    <h1>{counter}{""}</h1>
     <br />
-    <input type="button" value="like me" onClick={LikeMeAction} />
+    <input type="button" value="&#128077;" onClick={LikeMeAction} />
     </>
   );
 }
